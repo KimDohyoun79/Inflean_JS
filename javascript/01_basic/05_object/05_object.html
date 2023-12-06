@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+    // Object : 데이터를 담을 수 있는 객체
+    // 관련 있는 정보를 하나로 묶어서 관리
+    // 사람 : 이름, 전화번호, 이메일, 집주소
+    let person = {
+      name : "김도",
+      phone : "010-1111-0000",
+      email : "do@do.com",
+      address : "서울"
+    };
+
+    console.log(person);
+    console.log(person.name);
+    console.log(person["name"]);
+
+    // 값 변경
+    person.name = "김도현";
+    console.log(person.name);
+
+    // 키-값 추가
+    person.gender = "남";
+    console.log(person.gender);
+
+    // 동적(실행시점, 런타임시점)으로 Object의 특정 키:값을 가져와야 할 때
+    let userSelectedKey = "name";
+    let userSelectedValue = person.userSelectedKey; // 실행 안됨
+    console.log(userSelectedValue);  // undefined
+    let userSelectedValue2 = person[userSelectedKey];
+    console.log(userSelectedValue2); // 김도현
+
+  </script>
+</body>
+</html>
