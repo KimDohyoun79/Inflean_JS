@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+    // 1. String 객체
+    let name1 = "dokim";
+    let name2 = "\"dokim\"";
+    let name3 = '"dokim"'
+
+    document.write(name2+"<br>");
+    document.write(name3+"<br>");
+
+
+    // 2. 숫자형 객체
+    // js는 모든 숫자형 데이터를 64비트 부동소수점으로 관리
+    let num1 = 13;
+    let num2 = 3.14;
+    
+    document.write(num2+"<br>");
+
+    
+    // 3. boolean
+    let bool = 1 > 2;
+
+    document.write(bool+"<br>");
+
+
+    // 4. undefined
+    let a;
+    
+    document.write(a + "<br>");
+
+    
+    // 5. null
+    let x = null;
+
+    document.write(x + "<br>");
+
+
+    // 6. symbol 
+    // ES6 추가 : 실무에서 거의 사용 안함
+
+  </script>
+</body>
+</html>
