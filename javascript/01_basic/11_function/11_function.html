@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="./js/common.js"></script>
+    <script>
+        // 함수 선언식
+        function plus(sum1, sum2){
+            return sum1 + sum2;
+        }
+        console.log(plus(1, 2));
+
+        console.log(taxAmount(10000));
+
+        // 함수 표현식
+        const sum = function(num1, num2) {
+            return num1 + num2;
+        }
+        console.log(sum(5, 9));
+
+        // 함수 선언식 vs 함수 표현식
+        // 함수 선언식은 정의된 함수 위 or 아래에서 함수를 사용해도 에러x
+        // 함수 표현식은 정의된 함수 아래서만 사용, 위에서는 에러o
+        // js엔진이 코드를 해석하는 함수 선언식을 먼저 해석하기 때문에 가능
+        // 함수 표현식은 한줄 한줄 해석 되면서 실행
+
+
+        // Function 생성자 함수
+        // js 내장 함수인 Function
+        // 문자열로 파라미터, 코드블록 순서대로 넣음
+        // 마지막 파라미터가 코드 블록, 그 앞에 파라미터는 함수에 전달되는 파라미터
+        const add = new Function("num1", "num2", "return num1 + num2");
+        console.log(add(10, 20));
+
+    </script>
+</body>
+</html>
