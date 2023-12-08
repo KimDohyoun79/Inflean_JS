@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // for in
+            // Array type
+        let brands = ["애플", "구글", "아마존", "마이크로소프트", "메타"];
+        
+        for(const index in brands){
+            console.log(index);
+        }
+
+            // Object type
+        let person = {
+            name : "dokim",
+            phone : "010-1111-0000",
+            email : "do@do.com",
+            address : "서울"
+        };
+
+        for(const key in person){
+            console.log(key, person[key]);
+        }
+
+
+        // for of
+        for(const index of brands){
+            console.log(index);
+        }
+
+        const lang = "JavaScript";
+        for(const char of lang){
+            console.log(char);
+        }
+
+        let num = 1234567890; // Number Object
+        let numString = num.toString(); // 숫자형 -> 문자형 타입
+        for(const char of numString){
+            console.log(char);
+        }
+
+
+        // for each
+        brands.forEach(function(item, index){
+            console.log(index + " " + item);
+        });
+
+    </script>
+</body>
+</html>
