@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+  
+    // 1. 할당 연산자
+    let x = 1;
+    let y = 2;
+    x = x + y;  // 3
+    x = x ** y; // 제곱근 : 3^2
+    x += y;     // 복합 할당 연산자
+
+
+    // 2. 비교 연산자 (==, ===, !=, !==, <, <=)
+    x = 1;
+    y = 2;
+    console.log(x == y); // false
+
+    x = 3
+    y = "3";
+    console.log(x == y); // true : 데이터 타입 상관없이 값만 비교
+    console.log(x != y); // false : 데이터 타입 상관없이 값만 비교
+    x = 3
+    y = "3";
+    console.log(x === y); // false : 데이터 타입과 값 모두 비교
+    console.log(x !== y); // true : 데이터 타입과 값 모두 비교
+
+
+    // 3. 산술 연산자 : 증가&감소 연산자, 단항 부정 연산자(-), 숫자화 연산자(+)
+    x = 1;
+    y = 2;
+    x++; // 증가 연산자
+    y--; // 감소 연산자
+
+    //단항 부정 연산자 : 피연산자의 값의 부호가 바뀐다.
+    x = -3;
+    console.log(-x); // 3
+   
+    // 숫자화 연산자 : 숫자가 아닌 문자&boolean 값을 숫자로 변환하는 시도를 함
+    x = "1";
+    y = +x; // 1
+    console.log(x === y);
+
+    console.log(+true); // 1
+    console.log(+false); // 0
+
+
+    // 4. 논리 연산자 : &&, ||,  
+    console.log(true && false); // false
+    console.log(true || false); // true
+
+
+    // 5. 문자열 연산
+    let first = "kim";
+    let last = "dohyeon";
+    let full = first + " " + last;
+    console.log(full); // kim dohyeon
+
+
+    // 6. 삼항 연산자
+    let age = 19;
+    let isAdult = age >= 20 ? "성인" : "미성년자";
+    console.log(isAdult); // 미성년자
+
+
+  </script>
+</body>
+</html>
